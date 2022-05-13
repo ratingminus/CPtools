@@ -1,14 +1,16 @@
 {
     "code-runner.runInTerminal": true,
     "code-runner.executorMap": {
-        "cpp": "g++ -I /$(echo $HOME)/CPtools -std=c++20 -DFFS -Wall -Wextra -O2 -Wfloat-equal -Wlogical-op -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2  -fsanitize=address $fileName && ./a.out",
-        "python":"pypy3 $fileName < in.txt"
+        "cpp": 
+        "g++ -I $HOME/CPtools -std=c++20 -DFFS -Wall -Wextra -O2 -Wfloat-equal -Wlogical-op -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2  -fsanitize=address $fileName && ./a.out",
+        "python":
+        "pypy3 $fileName < in.txt"
     },
-    "code-runner.customCommand":"g++ -I /$(echo $HOME)/CPtools -std=c++20 -DFFS -Wall -Wextra -O2 -Wfloat-equal -Wlogical-op -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2  -fsanitize=address $fileName && ./a.out < in.txt",
+    "code-runner.customCommand": 
+    "echo \"[Input]\" && cat in.txt && echo \"[Output]\" && g++ -I $HOME/CPtools -std=c++20 -DFFS -Wall -Wextra -O2 -Wfloat-equal -Wlogical-op -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2  -fsanitize=address $fileName && ./a.out < in.txt",
     "code-runner.preserveFocus": true,
     "code-runner.clearPreviousOutput": true,
     "code-runner.fileDirectoryAsCwd": true,
-    "code-runner.ignoreSelection": true
-	// "terminal.integrated.fontFamily": "FiraCode NF",
-	// "editor.fontFamily": "Fira Code"
+    "code-runner.ignoreSelection": true,
+    "code-runner.showRunIconInEditorTitleMenu": false
 }
