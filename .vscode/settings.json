@@ -1,0 +1,25 @@
+{
+	"workbench.colorTheme": "One Monokai",
+	"files.autoSave": "afterDelay",
+	"editor.fontLigatures": "true",
+	"editor.fontFamily": "Fira Code",
+	"terminal.integrated.fontFamily": "FiraCode NF",
+	"terminal.integrated.cursorStyle": "underline",
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.profiles.windows": {
+		"PowerShell": {
+			"source": "PowerShell",
+			"icon": "terminal-powershell",
+			"args": ["-NoLogo"]
+		}
+	},
+	"workbench.sideBar.location": "right",
+	"workbench.panel.defaultLocation": "bottom",
+	"settingsSync.ignoredSettings": [
+		"editor.fontFamily",
+		"workbench.colorTheme",
+		"terminal.integrated.fontFamily"
+	],
+	"window.zoomLevel": 1,
+	"workbench.editor.splitInGroupLayout": "vertical"
+}
